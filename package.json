@@ -1,0 +1,17 @@
+{
+  "name": "sockets-messaging-test",
+  "version": "1.0.0",
+  "description": "Testing the sockets messaging server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2",
+    "tsx": "^3.14.0"
+  }
+}
