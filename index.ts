@@ -1,21 +1,18 @@
 import { io } from "socket.io-client";
 
+const socket = io("https://sockets.hosted.coasterfan5.com");
 
-
-const socket = io("https://sockets.hosted.coasterfan5.com")
-
-
-console.log('working...')
+console.log("working...");
 
 socket.on("error", () => {
-    console.log("error")
-})
+  console.log("error");
+});
 
 socket.on("message", (args) => {
-    console.log(args)
-})
+  console.log(args);
+});
 
 socket.on("connect", () => {
-    console.log('connected')
-    socket.emit("message", "Hello World")
-})
+  console.log("connected");
+  socket.emit("message", "Hello World");
+});
